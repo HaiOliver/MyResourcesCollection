@@ -1,17 +1,20 @@
 const { buildSchema } = require("graphql")
 
 module.exports = buildSchema(`
-// ===================================== Post ==========================
+
       type Post {
       _id: ID!
       link: String!
       }
+      
 
       input PostInput {
             link: String!
       }
 
-// ==================================Categories=================================
+
+
+
 
       type Category {
             _id: ID!
@@ -22,6 +25,7 @@ module.exports = buildSchema(`
       input CategoryInput {
             name: String!
       }
+
 
 
   type RootQuery {
@@ -40,4 +44,6 @@ module.exports = buildSchema(`
     query: RootQuery
     mutation: RootMutation
   }
+
+
 `)
