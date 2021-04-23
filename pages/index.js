@@ -5,11 +5,13 @@ import GoodReading from './goodReading'
 import FreeTemplate from './Free-template-React.js'
 import CoolHacking from './coolHacking'
 import FreeBuildInComponent from './FreeBuildInComponent'
-
+import Introduction from './introduction'
+import addPost from './addPost.js'
 export default function Home() {
   return (
     <div>
-      <h1>Home page Oliver</h1>
+      <Introduction/>
+      <addPost/>
       <h3>Posts:</h3>
       <div className="grid-cols-3 gap-4">
         <div className="container mx-auto">
